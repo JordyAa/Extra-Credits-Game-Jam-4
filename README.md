@@ -1,5 +1,5 @@
 # Extra Credits Game Jam 4
-Theme:
+Theme: 'Connect'
 
 # Built With
 * [Unity](https://unity.com/)
