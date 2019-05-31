@@ -11,7 +11,7 @@ public class Scroller : MonoBehaviour
 
         if (transform.position.x < destroyPoint)
         {
-            PlayerManager.instance.RemoveFromFearSetter(transform);
+            PlayerManager.instance.RemoveFromFearSetter(gameObject);
             Destroy(gameObject);
         }
     }

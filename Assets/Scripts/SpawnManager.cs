@@ -35,8 +35,11 @@ public class SpawnManager : MonoBehaviour
             GameObject go = Instantiate(hittablePrefab,
                 new Vector3(xSpawn, Random.Range(-ySpawn, ySpawn), 0f),
                 Quaternion.identity);
+
+            TextBox[] pool = Resources.LoadAll<TextBox>("Text_Boxes");
+            go.GetComponent<Hittable>().textBox = pool[Random.Range(0, pool.Length)];
             
-            PlayerManager.instance.AddToFearSetter(go.transform);
+            PlayerManager.instance.AddToFearSetter(go);
         }
     }
 }
