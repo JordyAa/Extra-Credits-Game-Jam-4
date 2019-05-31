@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2e3af76915557342a0551bcdbe5501c, type: 3}
   m_Name: Test_Twitter
   m_EditorClassIdentifier: 
-  isPositive: 1
   platform: 3
+  isPositive: 0
+  person: Twitter
+  text: A very very very very very very very very very very very very very very very
+    very mean person on twitter.

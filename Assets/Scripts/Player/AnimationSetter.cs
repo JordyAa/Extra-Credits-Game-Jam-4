@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class FearSetter : MonoBehaviour
+public class AnimationSetter : MonoBehaviour
 {
     public List<GameObject> hittables = new List<GameObject>();
     

@@ -22,13 +22,13 @@ public class PlayerManager : MonoBehaviour
 
     public void AddToFearSetter(GameObject go)
     {
-        player1.GetComponent<FearSetter>().hittables.Add(go);
-        player2.GetComponent<FearSetter>().hittables.Add(go);
+        player1.GetComponent<AnimationSetter>().hittables.Add(go);
+        player2.GetComponent<AnimationSetter>().hittables.Add(go);
     }
     
     public void RemoveFromFearSetter(GameObject go)
     {
-        player1.GetComponent<FearSetter>().hittables.Remove(go);
-        player2.GetComponent<FearSetter>().hittables.Remove(go);
+        player1.GetComponent<AnimationSetter>().hittables.Remove(go);
+        player2.GetComponent<AnimationSetter>().hittables.Remove(go);
     }
 }
