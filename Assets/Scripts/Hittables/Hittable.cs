@@ -9,6 +9,7 @@ public class Hittable : MonoBehaviour
         if (textBox.isPositive)
         {
             ScoreManager.instance.AddScore(textBox.platform);
+            PlayerManager.instance.RemoveFromFearSetter(gameObject);
             Destroy(gameObject);
         }
     }
