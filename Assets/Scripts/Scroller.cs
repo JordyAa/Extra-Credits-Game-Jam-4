@@ -1,6 +1,4 @@
-﻿using System;
-using UnityEngine;
-using Unity.Entities;
+﻿using UnityEngine;
 
 public class Scroller : MonoBehaviour
 {
@@ -9,13 +7,5 @@ public class Scroller : MonoBehaviour
     private void Update()
     {
         transform.Translate(0f, -speed * Time.deltaTime, 0f);
-    }
-}
-
-internal class ScrollerSystem : ComponentSystem
-{
-    protected override void OnUpdate()
-    {
-        // todo: implement ecs.
     }
 }
