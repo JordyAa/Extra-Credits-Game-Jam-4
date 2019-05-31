@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName="Text Box", fileName="New Text Box")]
-public class TextBox : ScriptableObject
+public class TextBox
 {
-    public Platform platform;
-    public bool isPositive;
+    public readonly bool isPositive;
+    public readonly Platform platform;
+
+    public TextBox(bool isPositive, Platform? platform = null)
+    {
+        this.isPositive = isPositive;
+        this.platform = platform ?? (Platform) Random.Range(0, 3);
+    }
 }
 
 public enum Platform

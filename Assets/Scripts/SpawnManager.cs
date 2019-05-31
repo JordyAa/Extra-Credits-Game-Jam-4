@@ -17,8 +17,8 @@ public class SpawnManager : MonoBehaviour
         Camera cam = Camera.main;
         if (cam != null)
         {
-            ySpawn = cam.orthographicSize;
-            xSpawn = ySpawn * cam.aspect + 5f;
+            ySpawn = 0.8f * cam.orthographicSize;
+            xSpawn = ySpawn * cam.aspect + 3f;
         }
     }
 
@@ -42,9 +42,8 @@ public class SpawnManager : MonoBehaviour
             new Vector3(xSpawn, Random.Range(-ySpawn, ySpawn), 0f),
             Quaternion.identity);
 
-        TextBox[] pool = Resources.LoadAll<TextBox>("Text_Boxes");
-        go.GetComponent<Hittable>().textBox = pool[Random.Range(0, pool.Length)];
-            
+        go.GetComponent<Hittable>().textBox = new TextBox(Random.Range(0f, 1f) > 0.5f);
+
         PlayerManager.instance.AddToFearSetter(go);
     }
 }

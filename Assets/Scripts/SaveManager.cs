@@ -1,18 +1,28 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SaveManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static int facebookScore
     {
-        
+        get => PlayerPrefs.GetInt("facebookScore", 0);
+        set => PlayerPrefs.SetInt("facebookScore", value);
     }
-
-    // Update is called once per frame
-    void Update()
+    
+    public static int redditScore
     {
-        
+        get => PlayerPrefs.GetInt("redditScore", 0);
+        set => PlayerPrefs.SetInt("redditScore", value);
+    }
+    
+    public static int snapchatScore
+    {
+        get => PlayerPrefs.GetInt("snapchatScore", 0);
+        set => PlayerPrefs.SetInt("snapchatScore", value);
+    }
+    
+    public static int twitterScore
+    {
+        get => PlayerPrefs.GetInt("twitterScore", 0);
+        set => PlayerPrefs.SetInt("twitterScore", value);
     }
 }
