@@ -6,3 +6,4 @@ Theme: 'Connect'
 * [Krita](https://krita.org/)
 
 # Acknowledgements
+* [Emojis](https://emojipedia.org/)
