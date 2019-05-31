@@ -1145,6 +1145,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1222422147}
+  - component: {fileID: 1222422149}
   - component: {fileID: 1222422148}
   m_Layer: 0
   m_Name: SpawnManager
@@ -1182,6 +1183,18 @@ MonoBehaviour:
   timeBetweenSpawns: 10
   hittablePrefab: {fileID: 5063412882154907051, guid: 74b145c65b3f55f4dacbed3bde1ddc2a,
     type: 3}
+--- !u!114 &1222422149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222422146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73803203ec580f64095b72ac04c2bd9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1318993226
 GameObject:
   m_ObjectHideFlags: 0

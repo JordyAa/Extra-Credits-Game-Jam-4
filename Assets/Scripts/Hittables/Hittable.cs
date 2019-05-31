@@ -19,7 +19,16 @@ public class Hittable : MonoBehaviour
 
     private void SetText()
     {
-        messageText.text = textBox.text;
+        if (textBox.isPositive)
+        {
+            messageText.text = ResourcesManager.instance.messagesPositive[
+                Random.Range(0, ResourcesManager.instance.messagesPositive.Length)];
+        }
+        else
+        {
+            messageText.text = ResourcesManager.instance.messagesNegative[
+                Random.Range(0, ResourcesManager.instance.messagesNegative.Length)];
+        }
     }
 
     public void OnHit()
