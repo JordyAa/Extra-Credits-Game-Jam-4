@@ -17,8 +17,8 @@ public class SpawnManager : MonoBehaviour
         Camera cam = Camera.main;
         if (cam != null)
         {
-            ySpawn = 0.8f * cam.orthographicSize;
-            xSpawn = ySpawn * cam.aspect + 3f;
+            ySpawn = 0.85f * cam.orthographicSize;
+            xSpawn = ySpawn * cam.aspect + 5f;
         }
     }
 

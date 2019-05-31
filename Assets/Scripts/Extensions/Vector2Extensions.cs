@@ -4,11 +4,6 @@ namespace Extensions
 {
     public static class Vector2Extensions
     {
-        public static Vector2 With(this Vector2 original, float? x = null, float? y = null)
-        {
-            return new Vector2(x ?? original.x, y ?? original.y);
-        }
-
         public static Vector2 Center(this Vector2 v1, Vector2 v2)
         {
             return new Vector2((v1.x + v2.x) / 2f, (v1.y + v2.y) / 2f);

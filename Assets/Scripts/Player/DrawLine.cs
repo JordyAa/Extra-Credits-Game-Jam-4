@@ -20,7 +20,8 @@ public class DrawLine : MonoBehaviour
         line.SetPosition(0, player1Pos);
         line.SetPosition(1, player2Pos);
 
-        transform.rotation.With(z: player1Pos.Angle(player2Pos));
+        Transform t = transform;
+        t.rotation = transform.rotation.With(z: player1Pos.Angle(player2Pos));
 
         col.transform.position = player1Pos.Center(player2Pos);
         col.size = new Vector2(Vector2.Distance(player1Pos, player2Pos), col.size.y);
