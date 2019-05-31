@@ -99,9 +99,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 4
-    m_ConditionEvent: fear
-    m_EventTreshold: 0.2
+  - m_ConditionMode: 3
+    m_ConditionEvent: distance
+    m_EventTreshold: 3.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -742201744210436790}
   m_Solo: 0
@@ -151,9 +151,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: fear
-    m_EventTreshold: 0.25
+  - m_ConditionMode: 4
+    m_ConditionEvent: distance
+    m_EventTreshold: 3
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2087442689660679182}
   m_Solo: 0
@@ -205,9 +205,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: fear
-    m_EventTreshold: 0.75
+  - m_ConditionMode: 4
+    m_ConditionEvent: distance
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4213023810821476624}
   m_Solo: 0
@@ -256,7 +256,7 @@ AnimatorController:
   m_Name: Player
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: fear
+  - m_Name: distance
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -289,9 +289,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: fear
-    m_EventTreshold: 0.5
+  - m_ConditionMode: 4
+    m_ConditionEvent: distance
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5041441073654141298}
   m_Solo: 0
@@ -342,9 +342,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 4
-    m_ConditionEvent: fear
-    m_EventTreshold: 0.7
+  - m_ConditionMode: 3
+    m_ConditionEvent: distance
+    m_EventTreshold: 1.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5041441073654141298}
   m_Solo: 0
@@ -401,9 +401,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 4
-    m_ConditionEvent: fear
-    m_EventTreshold: 0.45
+  - m_ConditionMode: 3
+    m_ConditionEvent: distance
+    m_EventTreshold: 2.1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2087442689660679182}
   m_Solo: 0

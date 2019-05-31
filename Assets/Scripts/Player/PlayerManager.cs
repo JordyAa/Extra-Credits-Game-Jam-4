@@ -19,4 +19,16 @@ public class PlayerManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    public void AddToFearSetter(Transform hittable)
+    {
+        player1.GetComponent<FearSetter>().hittables.Add(hittable);
+        player2.GetComponent<FearSetter>().hittables.Add(hittable);
+    }
+    
+    public void RemoveFromFearSetter(Transform hittable)
+    {
+        player1.GetComponent<FearSetter>().hittables.Remove(hittable);
+        player2.GetComponent<FearSetter>().hittables.Remove(hittable);
+    }
 }

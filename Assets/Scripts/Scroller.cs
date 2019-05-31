@@ -2,10 +2,17 @@
 
 public class Scroller : MonoBehaviour
 {
-    public float speed = 1f;
+    [SerializeField] private float speed = 1f;
+    [SerializeField] private float destroyPoint = -10f;
 
     private void Update()
     {
-        transform.Translate(0f, -speed * Time.deltaTime, 0f);
+        transform.Translate(-speed * Time.deltaTime, 0f, 0f);
+
+        if (transform.position.x < destroyPoint)
+        {
+            PlayerManager.instance.RemoveFromFearSetter(transform);
+            Destroy(gameObject);
+        }
     }
 }
