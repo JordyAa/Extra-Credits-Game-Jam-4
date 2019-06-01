@@ -60,8 +60,8 @@ MonoBehaviour:
   timeUntilSpawn: 0
   hittablePrefab: {fileID: 5063412882154907051, guid: 74b145c65b3f55f4dacbed3bde1ddc2a,
     type: 3}
-  timeBetweenRockets: 15
-  timeUntilRocket: 25
+  timeBetweenRockets: 13
+  timeUntilRocket: 20
   rocketPrefab: {fileID: 6794023081157310190, guid: fd157cdafb79d3a4a8d4b02b7f7ec899,
     type: 3}
   warnPrefab: {fileID: 6840829849522658803, guid: 1aa184b9aad2716459b60273f69d02a1,
