@@ -20,7 +20,7 @@ public class AnimationSetter : MonoBehaviour
         {
             GameObject closest = GetClosestHittable();
             
-            anim.SetBool(IsHappy, closest.GetComponent<Hittable>().textBox.isPositive);
+            anim.SetBool(IsHappy, closest.GetComponent<HittableText>().textBox.isPositive);
             anim.SetFloat(Distance, Vector2.Distance(transform.position, closest.transform.position));
         }
     }

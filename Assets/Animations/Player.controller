@@ -74,7 +74,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: distance
-    m_EventTreshold: 2
+    m_EventTreshold: 2.5
   - m_ConditionMode: 1
     m_ConditionEvent: isHappy
     m_EventTreshold: 0
@@ -127,7 +127,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: distance
-    m_EventTreshold: 2
+    m_EventTreshold: 2.5
   - m_ConditionMode: 2
     m_ConditionEvent: isHappy
     m_EventTreshold: 0
@@ -155,7 +155,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: distance
-    m_EventTreshold: 2.1
+    m_EventTreshold: 2.6
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4718264141484645777}
   m_Solo: 0
@@ -264,19 +264,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: doBlink
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isHappy
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -386,7 +386,7 @@ BlendTree:
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: adb99bbd6e7c6204393d3ed4960d5b87, type: 2}
-    m_Threshold: 1
+    m_Threshold: 2
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -394,7 +394,7 @@ BlendTree:
     m_Mirror: 0
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: f51c1ab63c7c666469a53ee6d862d6e7, type: 2}
-    m_Threshold: 2
+    m_Threshold: 2.5
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -402,8 +402,8 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: distance
   m_BlendParameterY: distance
-  m_MinThreshold: 1
-  m_MaxThreshold: 2
+  m_MinThreshold: 2
+  m_MaxThreshold: 2.5
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0
@@ -417,7 +417,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: distance
-    m_EventTreshold: 2.1
+    m_EventTreshold: 2.6
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -4718264141484645777}
   m_Solo: 0
@@ -442,14 +442,6 @@ BlendTree:
   m_Childs:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: b696309adbd842242b60bf1166e12911, type: 2}
-    m_Threshold: 1
-    m_Position: {x: 0, y: 0}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: distance
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 686ec68b992441d4389ed46b2a4eb7d0, type: 2}
     m_Threshold: 1.5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -457,8 +449,16 @@ BlendTree:
     m_DirectBlendParameter: distance
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 5846fc7dad6b208469c106bced1ca263, type: 2}
+    m_Motion: {fileID: 7400000, guid: 686ec68b992441d4389ed46b2a4eb7d0, type: 2}
     m_Threshold: 2
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: distance
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 5846fc7dad6b208469c106bced1ca263, type: 2}
+    m_Threshold: 2.5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -466,8 +466,8 @@ BlendTree:
     m_Mirror: 0
   m_BlendParameter: distance
   m_BlendParameterY: distance
-  m_MinThreshold: 1
-  m_MaxThreshold: 2
+  m_MinThreshold: 1.5
+  m_MaxThreshold: 2.5
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
   m_BlendType: 0

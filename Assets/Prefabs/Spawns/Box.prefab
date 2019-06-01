@@ -58,8 +58,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 347708251
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &7444722832468469663
 MonoBehaviour:
@@ -170,8 +170,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 347708251
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0576e26117fa36048bda4260084f3e39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -226,7 +226,7 @@ MonoBehaviour:
   messageText: {fileID: 238633299368111831}
   facebookSprite: {fileID: 21300000, guid: c5c28a2cfda03f5478766591068301b4, type: 3}
   redditSprite: {fileID: 21300000, guid: dec8988dd062f974e80d6c4d7218cfbe, type: 3}
-  snapchatSprite: {fileID: 21300000, guid: dec8988dd062f974e80d6c4d7218cfbe, type: 3}
+  snapchatSprite: {fileID: 21300000, guid: 1a7632b5f524d0b4d993182ab27fd82d, type: 3}
   twitterSprite: {fileID: 21300000, guid: 0576e26117fa36048bda4260084f3e39, type: 3}
 --- !u!114 &5063412882154907052
 MonoBehaviour:
@@ -494,8 +494,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

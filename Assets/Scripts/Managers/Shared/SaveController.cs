@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
-public class SaveManager : MonoBehaviour
+public class SaveController : MonoBehaviour
 {
     public static int facebookScore
     {
@@ -24,5 +25,10 @@ public class SaveManager : MonoBehaviour
     {
         get => PlayerPrefs.GetInt("twitterScore", 0);
         set => PlayerPrefs.SetInt("twitterScore", value);
+    }
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
     }
 }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6554320430927885024}
   m_Layer: 2
   m_Name: Player Line
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,7 +71,7 @@ LineRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 154059067
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Positions:
   - {x: 0, y: 1, z: 0}
