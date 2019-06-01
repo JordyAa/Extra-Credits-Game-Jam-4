@@ -1,4 +1,5 @@
 ﻿#pragma warning disable 0649
+using System;
 using UnityEngine;
 
 public class GameOverManager : MonoBehaviour
@@ -13,7 +14,12 @@ public class GameOverManager : MonoBehaviour
         get => _gameOver;
         set
         {
+            if (value == false) throw new Exception("Can't set game over back to false.");
+            
             foreach (GameObject go in player) go.SetActive(false);
+            
+            _gameOver = true;
+            ScoreManager.instance.SaveScore();
             
             Time.timeScale = 0.2f;
             gameOverPanel.SetActive(true);

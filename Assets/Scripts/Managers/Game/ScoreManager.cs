@@ -30,6 +30,7 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
+        LoadScore();
         UpdateScores();
     }
 
@@ -63,5 +64,21 @@ public class ScoreManager : MonoBehaviour
         redditText.text = redditScore.ToString();
         snapchatText.text = snapchatScore.ToString();
         twitterText.text = twitterScore.ToString();
+    }
+
+    private void LoadScore()
+    {
+        facebookScore = SaveController.facebookScore;
+        redditScore = SaveController.redditScore;
+        snapchatScore = SaveController.snapchatScore;
+        twitterScore = SaveController.twitterScore;
+    }
+
+    public void SaveScore()
+    {
+        SaveController.facebookScore += facebookScore;
+        SaveController.redditScore += redditScore;
+        SaveController.snapchatScore += snapchatScore;
+        SaveController.twitterScore += twitterScore;
     }
 }
