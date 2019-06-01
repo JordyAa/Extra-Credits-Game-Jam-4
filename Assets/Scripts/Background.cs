@@ -1,26 +1,19 @@
-﻿#pragma warning disable 0649
-using Extensions;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Background : MonoBehaviour
 {
-    [SerializeField] private float speed = 1f;
+    private static Background instance;
     
-    [SerializeField] private Transform[] bgs;
-
-    private void Update()
+    private void Awake()
     {
-        float move = -speed * Time.deltaTime;
-        
-        foreach (Transform bg in bgs)
+        if (instance == null)
         {
-            bg.Translate(move, 0f, 0f);
-            
-            Vector3 pos = bg.position;
-            if (pos.x < -21f)
-            {
-                bg.position = pos.With(x: pos.x + 42f);
-            }
+            instance = this;
+            DontDestroyOnLoad(this);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
         }
     }
 }

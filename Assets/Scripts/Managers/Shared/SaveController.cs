@@ -25,9 +25,4 @@ public class SaveController : MonoBehaviour
         get => PlayerPrefs.GetInt("twitterScore", 0);
         set => PlayerPrefs.SetInt("twitterScore", value);
     }
-
-    private void Awake()
-    {
-        DontDestroyOnLoad(this);
-    }
 }
