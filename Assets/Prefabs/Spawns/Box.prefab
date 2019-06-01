@@ -228,7 +228,10 @@ MonoBehaviour:
   redditSprite: {fileID: 21300000, guid: dec8988dd062f974e80d6c4d7218cfbe, type: 3}
   snapchatSprite: {fileID: 21300000, guid: 1a7632b5f524d0b4d993182ab27fd82d, type: 3}
   twitterSprite: {fileID: 21300000, guid: 0576e26117fa36048bda4260084f3e39, type: 3}
-  destroyEffect: {fileID: 0}
+  destroyEffectPositive: {fileID: 5203797164641379299, guid: 9548d473be3cb684b87cdb4f5b2f70be,
+    type: 3}
+  destroyEffectNegative: {fileID: 3338255348243251512, guid: 6ba91a2f7426b9842aa7c5fb74d9f7ba,
+    type: 3}
 --- !u!114 &5063412882154907052
 MonoBehaviour:
   m_ObjectHideFlags: 0

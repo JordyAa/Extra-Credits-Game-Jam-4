@@ -56,12 +56,12 @@ public class HittableText : MonoBehaviour, IHittable
     {
         if (textBox.isPositive)
         {
-            // Instantiate(destroyEffectPositive, transform.position, Quaternion.identity);
+            Instantiate(destroyEffectPositive, transform.position, Quaternion.identity);
             ScoreManager.instance.AddScore(textBox.platform);
         }
         else
         {
-            // Instantiate(destroyEffectNegative, transform.position, Quaternion.identity);
+            Instantiate(destroyEffectNegative, transform.position, Quaternion.identity);
             GameOverManager.instance.gameOver = true;
         }
         
