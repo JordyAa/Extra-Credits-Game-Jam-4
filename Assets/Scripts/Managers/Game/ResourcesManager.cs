@@ -5,7 +5,8 @@ public class ResourcesManager : MonoBehaviour
 {
     public static ResourcesManager instance { get; private set; }
 
-    public string[] names { get; private set; }
+    public string[] names_first { get; private set; }
+    public string[] names_last { get; private set; }
     public string[] messagesPositive { get; private set; }
     public string[] messagesNegative { get; private set; }
     
@@ -23,7 +24,10 @@ public class ResourcesManager : MonoBehaviour
 
     private void Start()
     {
-        names = JsonConvert.DeserializeObject<string[]>(Resources.Load<TextAsset>("names").ToString());
+        names_first = JsonConvert.DeserializeObject<string[]>(
+            Resources.Load<TextAsset>("names_first").ToString());
+        names_last = JsonConvert.DeserializeObject<string[]>(
+            Resources.Load<TextAsset>("names_last").ToString());
         
         messagesPositive = JsonConvert.DeserializeObject<string[]>(
             Resources.Load<TextAsset>("messages_positive").ToString());

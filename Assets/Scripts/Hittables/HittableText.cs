@@ -13,7 +13,8 @@ public class HittableText : MonoBehaviour, IHittable
     [SerializeField] private Sprite snapchatSprite;
     [SerializeField] private Sprite twitterSprite;
     
-    [SerializeField] private GameObject destroyEffect;
+    [SerializeField] private GameObject destroyEffectPositive;
+    [SerializeField] private GameObject destroyEffectNegative;
     
     private TextBox _textBox;
     public TextBox textBox
@@ -29,8 +30,11 @@ public class HittableText : MonoBehaviour, IHittable
 
     private void SetText()
     {
-        nameText.text = ResourcesManager.instance.names[
-            Random.Range(0, ResourcesManager.instance.names.Length)];
+        string first = ResourcesManager.instance.names_first[
+            Random.Range(0, ResourcesManager.instance.names_first.Length)];
+        string last = ResourcesManager.instance.names_last[
+            Random.Range(0, ResourcesManager.instance.names_last.Length)];
+        nameText.text = $"{first} {last}";
 
         messageText.text = textBox.isPositive
             ? ResourcesManager.instance.messagesPositive[
@@ -52,14 +56,15 @@ public class HittableText : MonoBehaviour, IHittable
     {
         if (textBox.isPositive)
         {
+            // Instantiate(destroyEffectPositive, transform.position, Quaternion.identity);
             ScoreManager.instance.AddScore(textBox.platform);
         }
         else
         {
+            // Instantiate(destroyEffectNegative, transform.position, Quaternion.identity);
             GameOverManager.instance.gameOver = true;
         }
         
-        // Instantiate(destroyEffect, transform.position, Quaternion.identity);
         
         PlayerManager.instance.RemoveFromFearSetter(gameObject);
         Destroy(gameObject);
