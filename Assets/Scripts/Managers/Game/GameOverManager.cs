@@ -19,7 +19,6 @@ public class GameOverManager : MonoBehaviour
             foreach (GameObject go in player) go.SetActive(false);
             
             _gameOver = true;
-            ScoreManager.instance.SaveScore();
             
             Time.timeScale = 0.2f;
             gameOverPanel.SetActive(true);

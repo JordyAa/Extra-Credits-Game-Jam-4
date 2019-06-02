@@ -111,11 +111,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3617492152870219792}
     m_Modifications:
-    - target: {fileID: 2960570993689043668, guid: 38fabddf56b534b49aabf251c63a6822,
-        type: 3}
-      propertyPath: m_Name
-      value: Facebook
-      objectReference: {fileID: 0}
     - target: {fileID: 2960570993689043669, guid: 38fabddf56b534b49aabf251c63a6822,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -221,6 +216,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2960570993689043668, guid: 38fabddf56b534b49aabf251c63a6822,
+        type: 3}
+      propertyPath: m_Name
+      value: Facebook
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38fabddf56b534b49aabf251c63a6822, type: 3}
 --- !u!224 &3617492152182853047 stripped
@@ -236,11 +236,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3617492152870219792}
     m_Modifications:
-    - target: {fileID: 6925735277269584058, guid: 9c39e513077d4a945bae1f9fcf1ae962,
-        type: 3}
-      propertyPath: m_Name
-      value: Twitter
-      objectReference: {fileID: 0}
     - target: {fileID: 6925735277269584059, guid: 9c39e513077d4a945bae1f9fcf1ae962,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -346,6 +341,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6925735277269584058, guid: 9c39e513077d4a945bae1f9fcf1ae962,
+        type: 3}
+      propertyPath: m_Name
+      value: Twitter
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c39e513077d4a945bae1f9fcf1ae962, type: 3}
 --- !u!224 &4835717698936433939 stripped
@@ -361,11 +361,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3617492152870219792}
     m_Modifications:
-    - target: {fileID: 966980309012717977, guid: 382af1ecb4f6d334896181133cd97321,
-        type: 3}
-      propertyPath: m_Name
-      value: Reddit
-      objectReference: {fileID: 0}
     - target: {fileID: 966980309012717976, guid: 382af1ecb4f6d334896181133cd97321,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -471,6 +466,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 966980309012717977, guid: 382af1ecb4f6d334896181133cd97321,
+        type: 3}
+      propertyPath: m_Name
+      value: Reddit
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 382af1ecb4f6d334896181133cd97321, type: 3}
 --- !u!224 &3874874125189978798 stripped
@@ -486,11 +486,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3617492152870219792}
     m_Modifications:
-    - target: {fileID: 8755107936412103400, guid: f2a7edd6b4e36794fa4ac517fd23ffb5,
-        type: 3}
-      propertyPath: m_Name
-      value: Snapchat
-      objectReference: {fileID: 0}
     - target: {fileID: 8755107936412103401, guid: f2a7edd6b4e36794fa4ac517fd23ffb5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -595,6 +590,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8755107936412103400, guid: f2a7edd6b4e36794fa4ac517fd23ffb5,
+        type: 3}
+      propertyPath: m_Name
+      value: Snapchat
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2a7edd6b4e36794fa4ac517fd23ffb5, type: 3}

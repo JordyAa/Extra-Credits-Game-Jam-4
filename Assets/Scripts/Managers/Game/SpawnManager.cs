@@ -16,6 +16,8 @@ public class SpawnManager : MonoBehaviour
     
     [SerializeField] private GameObject rocketPrefab;
     [SerializeField] private GameObject warnPrefab;
+
+    private float[] positiveBonuses;
     
     private float xSpawn;
     private float ySpawn;
@@ -28,6 +30,14 @@ public class SpawnManager : MonoBehaviour
             ySpawn = 0.85f * cam.orthographicSize;
             xSpawn = ySpawn * cam.aspect + 5f;
         }
+
+        positiveBonuses = new []
+        {
+            UpgradeController.facebookPositiveBonus,
+            UpgradeController.redditPositiveBonus,
+            UpgradeController.snapchatPositiveBonus,
+            UpgradeController.twitterPositiveBonus
+        };
     }
 
     private void Update()
@@ -63,7 +73,9 @@ public class SpawnManager : MonoBehaviour
             new Vector3(xSpawn, Random.Range(-ySpawn, ySpawn), 0f),
             Quaternion.identity);
 
-        go.GetComponent<HittableText>().textBox = new TextBox(Random.Range(0f, 1f) > 0.5f);
+        int platform = Random.Range(0, 4);
+        bool isPositive = Random.Range(0f, 1f) < 0.5f + positiveBonuses[platform];
+        go.GetComponent<HittableText>().textBox = new TextBox((Platform) platform, isPositive);
 
         PlayerManager.instance.AddToFearSetter(go);
     }

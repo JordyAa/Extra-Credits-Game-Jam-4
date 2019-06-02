@@ -11,11 +11,8 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI snapchatText;
     [SerializeField] private TextMeshProUGUI twitterText;
 
-    private int facebookScore;
-    private int redditScore;
-    private int snapchatScore;
-    private int twitterScore;
-
+    private int[] scoreAmounts;
+    
     private void Awake()
     {
         if (instance == null)
@@ -30,55 +27,46 @@ public class ScoreManager : MonoBehaviour
 
     private void Start()
     {
-        LoadScore();
+        scoreAmounts = new []
+        {
+            UpgradeController.facebookScoreAmount,
+            UpgradeController.redditScoreAmount,
+            UpgradeController.snapchatScoreAmount,
+            UpgradeController.twitterScoreAmount
+        };
+        
         UpdateScores();
     }
 
-    public void AddScore(Platform platform, int amount=1)
+    public void AddScore(Platform platform)
     {
         switch (platform)
         {
             case Platform.Facebook:
-                facebookScore += amount;
+                SaveController.facebookScore += scoreAmounts[0];
                 break;
             
             case Platform.Reddit:
-                redditScore += amount;
+                SaveController.redditScore += scoreAmounts[1];
                 break;
             
             case Platform.Snapchat:
-                snapchatScore += amount;
+                SaveController.snapchatScore += scoreAmounts[2];
                 break;
             
             case Platform.Twitter:
-                twitterScore += amount;
+                SaveController.twitterScore += scoreAmounts[3];
                 break;
         }
         
         UpdateScores();
     }
 
-    private void UpdateScores()
+    public void UpdateScores()
     {
-        facebookText.text = facebookScore.ToString();
-        redditText.text = redditScore.ToString();
-        snapchatText.text = snapchatScore.ToString();
-        twitterText.text = twitterScore.ToString();
-    }
-
-    private void LoadScore()
-    {
-        facebookScore = SaveController.facebookScore;
-        redditScore = SaveController.redditScore;
-        snapchatScore = SaveController.snapchatScore;
-        twitterScore = SaveController.twitterScore;
-    }
-
-    public void SaveScore()
-    {
-        SaveController.facebookScore += facebookScore;
-        SaveController.redditScore += redditScore;
-        SaveController.snapchatScore += snapchatScore;
-        SaveController.twitterScore += twitterScore;
+        facebookText.text = SaveController.facebookScore.ToString();
+        redditText.text = SaveController.redditScore.ToString();
+        snapchatText.text = SaveController.snapchatScore.ToString();
+        twitterText.text = SaveController.twitterScore.ToString();
     }
 }
