@@ -703,32 +703,32 @@ PrefabInstance:
     - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 23
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
@@ -738,7 +738,7 @@ PrefabInstance:
     - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_firstOverflowCharacterIndex
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
@@ -748,27 +748,27 @@ PrefabInstance:
     - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ba5e1015ac2a334dbe8fd6694f8554d, type: 3}
@@ -2041,8 +2041,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 10}
-  m_SizeDelta: {x: 220, y: 70}
+  m_AnchoredPosition: {x: 0, y: 5}
+  m_SizeDelta: {x: 225, y: 75}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &939055638
 MonoBehaviour:
@@ -4956,6 +4956,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 10ea51aeb70e4fd4cb63b93144d928f8,
         type: 3}
+    - target: {fileID: 4299828450130401669, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4299828450130401668, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6532,106 +6537,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 48
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_firstOverflowCharacterIndex
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_fontSizeMax
-      value: 48
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_fontSizeMin
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_text
-      value: CUTE PETS
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450943608879, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.pageCount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_text
-      value: Facebook posts are 5% more positive.
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_firstOverflowCharacterIndex
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.spaceCount
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.wordCount
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450822316427, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.lineCount
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_fontSizeBase
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_firstOverflowCharacterIndex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_text
-      value: 10 LIKES
-      objectReference: {fileID: 0}
-    - target: {fileID: 4299828450644176793, guid: 5ba5e1015ac2a334dbe8fd6694f8554d,
-        type: 3}
-      propertyPath: m_textInfo.characterCount
-      value: 8
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ba5e1015ac2a334dbe8fd6694f8554d, type: 3}
 --- !u!222 &5255694712041086134
@@ -6660,7 +6565,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 10
+  m_Spacing: -20
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class UpgradeManager : MonoBehaviour
 {
@@ -12,8 +14,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.facebookScore -= 10;
                     UpgradeController.facebookPositiveBonus += 0.05f;
                     ScoreManager.instance.PlayParticle(Platform.Facebook);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
             
             case 1:
@@ -22,8 +26,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.redditScore -= 10;
                     UpgradeController.redditPositiveBonus += 0.05f;
                     ScoreManager.instance.PlayParticle(Platform.Reddit);
+                    break;
                 }
 
+                StartCoroutine(Shake());
                 break;
             
             case 2:
@@ -32,8 +38,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.snapchatScore -= 10;
                     UpgradeController.snapchatPositiveBonus += 0.05f;
                     ScoreManager.instance.PlayParticle(Platform.Snapchat);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
             
             case 3:
@@ -42,8 +50,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.twitterScore -= 10;
                     UpgradeController.twitterPositiveBonus += 0.05f;
                     ScoreManager.instance.PlayParticle(Platform.Twitter);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
         }
         
@@ -60,8 +70,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.facebookScore -= 20;
                     UpgradeController.facebookScoreAmount += 1;
                     ScoreManager.instance.PlayParticle(Platform.Facebook);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
             
             case 1:
@@ -70,8 +82,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.redditScore -= 20;
                     UpgradeController.redditScoreAmount += 1;
                     ScoreManager.instance.PlayParticle(Platform.Reddit);
+                    break;
                 }
 
+                StartCoroutine(Shake());
                 break;
             
             case 2:
@@ -80,8 +94,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.snapchatScore -= 20;
                     UpgradeController.snapchatScoreAmount += 1;
                     ScoreManager.instance.PlayParticle(Platform.Snapchat);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
             
             case 3:
@@ -90,8 +106,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.twitterScore -= 20;
                     UpgradeController.twitterScoreAmount += 1;
                     ScoreManager.instance.PlayParticle(Platform.Twitter);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
         }
         
@@ -108,8 +126,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.facebookScore -= 5;
                     UpgradeController.dragSpeedBonus += 0.03f;
                     ScoreManager.instance.PlayParticle(Platform.Facebook);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
             
             case 1:
@@ -118,8 +138,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.redditScore -= 5;
                     UpgradeController.dragSpeedBonus += 0.03f;
                     ScoreManager.instance.PlayParticle(Platform.Reddit);
+                    break;
                 }
 
+                StartCoroutine(Shake());
                 break;
             
             case 2:
@@ -128,8 +150,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.snapchatScore -= 5;
                     UpgradeController.dragSpeedBonus += 0.03f;
                     ScoreManager.instance.PlayParticle(Platform.Snapchat);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
             
             case 3:
@@ -138,8 +162,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.twitterScore -= 5;
                     UpgradeController.dragSpeedBonus += 0.03f;
                     ScoreManager.instance.PlayParticle(Platform.Twitter);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
         }
         
@@ -156,8 +182,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.facebookScore -= 5;
                     UpgradeController.dragDistanceBonus += 0.1f;
                     ScoreManager.instance.PlayParticle(Platform.Facebook);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
             
             case 1:
@@ -166,8 +194,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.redditScore -= 5;
                     UpgradeController.dragDistanceBonus += 0.1f;
                     ScoreManager.instance.PlayParticle(Platform.Reddit);
+                    break;
                 }
 
+                StartCoroutine(Shake());
                 break;
             
             case 2:
@@ -176,8 +206,10 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.snapchatScore -= 5;
                     UpgradeController.dragDistanceBonus += 0.1f;
                     ScoreManager.instance.PlayParticle(Platform.Snapchat);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
             
             case 3:
@@ -186,11 +218,28 @@ public class UpgradeManager : MonoBehaviour
                     SaveController.twitterScore -= 5;
                     UpgradeController.dragDistanceBonus += 0.1f;
                     ScoreManager.instance.PlayParticle(Platform.Twitter);
+                    break;
                 }
-                
+
+                StartCoroutine(Shake());
                 break;
         }
         
         ScoreManager.instance.UpdateScores();
+    }
+
+    private static IEnumerator Shake()
+    {
+        GameObject go = EventSystem.current.currentSelectedGameObject;
+        Vector3 origin = go.transform.localPosition;
+        
+        Shaker shaker = go.GetComponent<Shaker>();
+        shaker.enabled = true;
+        
+        yield return new WaitForSeconds(1f);
+
+        // ReSharper disable once Unity.InefficientPropertyAccess
+        shaker.enabled = false;
+        go.transform.localPosition = origin;
     }
 }
