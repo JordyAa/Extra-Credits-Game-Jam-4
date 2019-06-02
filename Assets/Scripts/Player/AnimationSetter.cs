@@ -28,7 +28,6 @@ public class AnimationSetter : MonoBehaviour
     private GameObject GetClosestHittable()
     {
         Vector3 position = transform.position;
-        
         GameObject closest = null;
         float distance = Mathf.Infinity;
         

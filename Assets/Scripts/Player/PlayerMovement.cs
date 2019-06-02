@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnMouseDown()
     {
-        offset = transform.position - cam.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
+        offset = transform.position - cam.ScreenToWorldPoint(Input.mousePosition.With(z: 0f));
     }
 
     private void OnMouseDrag()

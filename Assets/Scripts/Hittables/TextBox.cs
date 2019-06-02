@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-
-public class TextBox
+﻿public class TextBox
 {
     public readonly bool isPositive;
     public readonly Platform platform;

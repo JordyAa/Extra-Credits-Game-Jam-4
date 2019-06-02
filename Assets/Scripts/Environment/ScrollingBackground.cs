@@ -10,11 +10,9 @@ public class ScrollingBackground : MonoBehaviour
 
     private void Update()
     {
-        float move = -speed * Time.deltaTime;
-        
         foreach (Transform bg in bgs)
         {
-            bg.Translate(move, 0f, 0f);
+            bg.Translate(-speed * Time.deltaTime, 0f, 0f);
             
             Vector3 pos = bg.position;
             if (pos.x < -21f)

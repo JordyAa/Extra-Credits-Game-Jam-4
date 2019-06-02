@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlaceAtUIPosition : MonoBehaviour
 {
     [SerializeField] private RectTransform target;
-    [SerializeField] private Vector3 offset;
+    [SerializeField] private Vector3 offset = Vector3.zero;
 
     private void Start()
     {

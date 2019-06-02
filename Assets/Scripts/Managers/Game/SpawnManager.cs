@@ -43,26 +43,28 @@ public class SpawnManager : MonoBehaviour
     private void Update()
     {
         if (GameOverManager.instance.gameOver) return;
+
+        float deltaTime = Time.deltaTime;
         
         if (timeUntilSpawn > 0)
         {
-            timeUntilSpawn -= Time.deltaTime;
+            timeUntilSpawn -= deltaTime;
         }
         else
         {
             timeUntilSpawn = Random.Range(0.9f * timeBetweenSpawns, 1.1f * timeBetweenSpawns);
-            timeBetweenSpawns *= Random.Range(0.99f, 1f);
+            timeBetweenSpawns = Mathf.Max(0.5f, timeBetweenSpawns * Random.Range(0.95f, 1f));
             SpawnBox();
         }
         
         if (timeUntilRocket > 0)
         {
-            timeUntilRocket -= Time.deltaTime;
+            timeUntilRocket -= deltaTime;
         }
         else
         {
             timeUntilRocket = Random.Range(0.9f * timeBetweenRockets, 1.1f * timeBetweenRockets);
-            timeBetweenSpawns *= Random.Range(0.95f, 1f);
+            timeBetweenSpawns = Mathf.Max(1f, timeBetweenSpawns * Random.Range(0.9f, 1f));
             SpawnRocket();
         }
     }

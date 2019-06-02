@@ -1,24 +1,25 @@
-﻿using UnityEngine;
+﻿#pragma warning disable 0649
+using UnityEngine;
 using UnityEngine.UI;
 
 public class MusicToggle : MonoBehaviour
 {
-    [SerializeField] private Sprite muteIcon = null;
-    [SerializeField] private Sprite unmuteIcon = null;
+    [SerializeField] private Sprite muteIcon;
+    [SerializeField] private Sprite unmuteIcon;
     
-    private Image toggleImage = null;
+    private AudioSource musicSource;
+    private Image toggleImage;
 
     private void Start()
     {
+        musicSource = GameObject.Find("AudioController").GetComponent<AudioSource>();
         toggleImage = GetComponent<Image>();
     }
 
     public void ToggleMusic()
     {
-        AudioSource music = GameObject.Find("AudioController").GetComponent<AudioSource>();
-
-        bool e = !music.enabled;
-        music.enabled = e;
+        bool e = !musicSource.enabled;
+        musicSource.enabled = e;
         toggleImage.sprite = e ? muteIcon : unmuteIcon;
     }
 }
