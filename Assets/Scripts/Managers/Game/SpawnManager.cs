@@ -74,7 +74,7 @@ public class SpawnManager : MonoBehaviour
             Quaternion.identity);
 
         int platform = Random.Range(0, 4);
-        bool isPositive = Random.Range(0f, 1f) < 0.5f + positiveBonuses[platform];
+        bool isPositive = Random.Range(0f, 1f) < 0.4f + positiveBonuses[platform];
         go.GetComponent<HittableText>().textBox = new TextBox((Platform) platform, isPositive);
 
         PlayerManager.instance.AddToFearSetter(go);

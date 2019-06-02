@@ -11,6 +11,11 @@ public class ScoreManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI snapchatText;
     [SerializeField] private TextMeshProUGUI twitterText;
 
+    [SerializeField] private ParticleSystem facebookParticle;
+    [SerializeField] private ParticleSystem redditParticle;
+    [SerializeField] private ParticleSystem snapchatParticle;
+    [SerializeField] private ParticleSystem twitterParticle;
+    
     private int[] scoreAmounts;
     
     private void Awake()
@@ -44,18 +49,22 @@ public class ScoreManager : MonoBehaviour
         {
             case Platform.Facebook:
                 SaveController.facebookScore += scoreAmounts[0];
+                facebookParticle.Play();
                 break;
             
             case Platform.Reddit:
                 SaveController.redditScore += scoreAmounts[1];
+                redditParticle.Play();
                 break;
             
             case Platform.Snapchat:
                 SaveController.snapchatScore += scoreAmounts[2];
+                snapchatParticle.Play();
                 break;
             
             case Platform.Twitter:
                 SaveController.twitterScore += scoreAmounts[3];
+                twitterParticle.Play();
                 break;
         }
         
