@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         cam = Camera.main;
+
+        dragSpeed += UpgradeController.dragSpeedBonus;
+        dragDistance += UpgradeController.dragDistanceBonus;
     }
 
     private void OnMouseDown()

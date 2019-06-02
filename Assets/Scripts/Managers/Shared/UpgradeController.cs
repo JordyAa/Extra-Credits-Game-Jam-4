@@ -50,4 +50,17 @@ public class UpgradeController : MonoBehaviour
         get => PlayerPrefs.GetInt("twitterScoreAmount", 1);
         set => PlayerPrefs.SetInt("twitterScoreAmount", value);
     }
+    
+    
+    public static float dragSpeedBonus
+    {
+        get => PlayerPrefs.GetFloat("dragSpeedBonus", 0f);
+        set => PlayerPrefs.SetFloat("dragSpeedBonus", value);
+    }
+    
+    public static float dragDistanceBonus
+    {
+        get => PlayerPrefs.GetFloat("dragDistanceBonus", 0f);
+        set => PlayerPrefs.SetFloat("dragDistanceBonus", value);
+    }
 }

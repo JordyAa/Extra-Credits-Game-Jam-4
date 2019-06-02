@@ -6,7 +6,6 @@ public class PlayerManager : MonoBehaviour
 
     public Transform player1;
     public Transform player2;
-    public Transform playerLine;
     
     private void Awake()
     {

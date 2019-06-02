@@ -89,4 +89,92 @@ public class UpgradeManager : MonoBehaviour
         
         ScoreManager.instance.UpdateScores();
     }
+    
+    public void PurchaseDragSpeedBonus(int platform)
+    {
+        switch (platform)
+        {
+            case 0:
+                if (SaveController.facebookScore >= 5)
+                {
+                    SaveController.facebookScore -= 5;
+                    UpgradeController.dragSpeedBonus += 0.03f;
+                }
+                
+                break;
+            
+            case 1:
+                if (SaveController.redditScore >= 5)
+                {
+                    SaveController.redditScore -= 5;
+                    UpgradeController.dragSpeedBonus += 0.03f;
+                }
+
+                break;
+            
+            case 2:
+                if (SaveController.snapchatScore >= 5)
+                {
+                    SaveController.snapchatScore -= 5;
+                    UpgradeController.dragSpeedBonus += 0.03f;
+                }
+                
+                break;
+            
+            case 3:
+                if (SaveController.twitterScore >= 5)
+                {
+                    SaveController.twitterScore -= 5;
+                    UpgradeController.dragSpeedBonus += 0.03f;
+                }
+                
+                break;
+        }
+        
+        ScoreManager.instance.UpdateScores();
+    }
+    
+    public void PurchaseDragDistanceBonus(int platform)
+    {
+        switch (platform)
+        {
+            case 0:
+                if (SaveController.facebookScore >= 5)
+                {
+                    SaveController.facebookScore -= 5;
+                    UpgradeController.dragDistanceBonus += 0.1f;
+                }
+                
+                break;
+            
+            case 1:
+                if (SaveController.redditScore >= 5)
+                {
+                    SaveController.redditScore -= 5;
+                    UpgradeController.dragDistanceBonus += 0.1f;
+                }
+
+                break;
+            
+            case 2:
+                if (SaveController.snapchatScore >= 5)
+                {
+                    SaveController.snapchatScore -= 5;
+                    UpgradeController.dragDistanceBonus += 0.1f;
+                }
+                
+                break;
+            
+            case 3:
+                if (SaveController.twitterScore >= 5)
+                {
+                    SaveController.twitterScore -= 5;
+                    UpgradeController.dragDistanceBonus += 0.1f;
+                }
+                
+                break;
+        }
+        
+        ScoreManager.instance.UpdateScores();
+    }
 }
