@@ -13,6 +13,9 @@ public class PlayOnSceneEnd : StateMachineBehaviour
 
     private void EndScene()
     {
-        animator.SetTrigger(Scene);
+        if (animator.parameterCount > 0)
+        {
+            animator.SetTrigger(Scene);
+        }
     }
 }

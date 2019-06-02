@@ -18,7 +18,7 @@ public class SceneController : MonoBehaviour
         
         OnSceneEnd();
         OnSceneEnd = delegate { };
-
+        
         yield return new WaitForSeconds(1f);
         
         SceneManager.LoadScene(buildIndex);

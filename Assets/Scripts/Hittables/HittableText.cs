@@ -60,6 +60,7 @@ public class HittableText : MonoBehaviour, IHittable
                 destroyEffectsPositive[Random.Range(0, destroyEffectsPositive.Length)],
                 transform.position,
                 Quaternion.identity);
+            
             ScoreManager.instance.AddScore(textBox.platform);
         }
         else
@@ -68,7 +69,7 @@ public class HittableText : MonoBehaviour, IHittable
             GameOverManager.instance.gameOver = true;
         }
         
-        
+        AudioController.instance.HitText(textBox.isPositive);
         PlayerManager.instance.RemoveFromFearSetter(gameObject);
         Destroy(gameObject);
     }

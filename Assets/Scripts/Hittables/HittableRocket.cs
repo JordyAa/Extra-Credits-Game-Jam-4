@@ -9,6 +9,8 @@ public class HittableRocket : MonoBehaviour, IHittable
     {
         GameOverManager.instance.gameOver = true;
 
+        AudioController.instance.HitThumb();
+        
         Instantiate(destroyEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
