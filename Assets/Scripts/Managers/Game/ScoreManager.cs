@@ -49,26 +49,45 @@ public class ScoreManager : MonoBehaviour
         {
             case Platform.Facebook:
                 SaveController.facebookScore += scoreAmounts[0];
-                facebookParticle.Play();
                 break;
             
             case Platform.Reddit:
                 SaveController.redditScore += scoreAmounts[1];
-                redditParticle.Play();
                 break;
             
             case Platform.Snapchat:
                 SaveController.snapchatScore += scoreAmounts[2];
-                snapchatParticle.Play();
                 break;
             
             case Platform.Twitter:
                 SaveController.twitterScore += scoreAmounts[3];
-                twitterParticle.Play();
                 break;
         }
         
+        PlayParticle(platform);
         UpdateScores();
+    }
+
+    public void PlayParticle(Platform platform)
+    {
+        switch (platform)
+        {
+            case Platform.Facebook:
+                facebookParticle.Play();
+                break;
+            
+            case Platform.Reddit:
+                redditParticle.Play();
+                break;
+            
+            case Platform.Snapchat:
+                snapchatParticle.Play();
+                break;
+            
+            case Platform.Twitter:
+                twitterParticle.Play();
+                break;
+        }
     }
 
     public void UpdateScores()
