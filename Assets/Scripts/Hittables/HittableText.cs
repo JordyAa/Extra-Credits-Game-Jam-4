@@ -13,7 +13,7 @@ public class HittableText : MonoBehaviour, IHittable
     [SerializeField] private Sprite snapchatSprite;
     [SerializeField] private Sprite twitterSprite;
     
-    [SerializeField] private GameObject destroyEffectPositive;
+    [SerializeField] private GameObject[] destroyEffectsPositive;
     [SerializeField] private GameObject destroyEffectNegative;
     
     private TextBox _textBox;
@@ -56,7 +56,10 @@ public class HittableText : MonoBehaviour, IHittable
     {
         if (textBox.isPositive)
         {
-            Instantiate(destroyEffectPositive, transform.position, Quaternion.identity);
+            Instantiate(
+                destroyEffectsPositive[Random.Range(0, destroyEffectsPositive.Length)],
+                transform.position,
+                Quaternion.identity);
             ScoreManager.instance.AddScore(textBox.platform);
         }
         else

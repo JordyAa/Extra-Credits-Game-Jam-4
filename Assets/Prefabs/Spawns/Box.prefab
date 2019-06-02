@@ -228,8 +228,13 @@ MonoBehaviour:
   redditSprite: {fileID: 21300000, guid: dec8988dd062f974e80d6c4d7218cfbe, type: 3}
   snapchatSprite: {fileID: 21300000, guid: 1a7632b5f524d0b4d993182ab27fd82d, type: 3}
   twitterSprite: {fileID: 21300000, guid: 0576e26117fa36048bda4260084f3e39, type: 3}
-  destroyEffectPositive: {fileID: 5203797164641379299, guid: 9548d473be3cb684b87cdb4f5b2f70be,
-    type: 3}
+  destroyEffectsPositive:
+  - {fileID: 5203797164641379299, guid: 9548d473be3cb684b87cdb4f5b2f70be, type: 3}
+  - {fileID: 5203797164641379299, guid: 4604782ca90d30c43b71c86b4a6605aa, type: 3}
+  - {fileID: 5203797164641379299, guid: a1cd25bf1523eb74b8f45c7468e44c83, type: 3}
+  - {fileID: 5203797164641379299, guid: cc6cba2fee8e3e24db3c178da35108dd, type: 3}
+  - {fileID: 5203797164641379299, guid: 1f890aa8fba58464fa0ea91a56b95afd, type: 3}
+  - {fileID: 5203797164641379299, guid: 845c331e5afc09d4cb7e61e62455fd57, type: 3}
   destroyEffectNegative: {fileID: 3338255348243251512, guid: 6ba91a2f7426b9842aa7c5fb74d9f7ba,
     type: 3}
 --- !u!114 &5063412882154907052
