@@ -10,7 +10,7 @@ public class Scroller : MonoBehaviour
         transform.Translate(-speed * Time.deltaTime, 0f, 0f);
 
         if (destroyPoint < 0 && transform.position.x < destroyPoint ||
-            destroyPoint > 0 && transform.position.x > destroyPoint)
+            destroyPoint > 0 && transform.position.x > 2f * destroyPoint)
         {
             PlayerManager.instance.RemoveFromFearSetter(gameObject);
             Destroy(gameObject);
