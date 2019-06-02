@@ -796,11 +796,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 365724574}
     m_Modifications:
-    - target: {fileID: 2261438807871473822, guid: ce4ac6533052b2f468d6ee6334dde919,
-        type: 3}
-      propertyPath: m_Name
-      value: Snapchat Score Effect
-      objectReference: {fileID: 0}
     - target: {fileID: 2053847141386187783, guid: ce4ac6533052b2f468d6ee6334dde919,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -855,6 +850,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261438807871473822, guid: ce4ac6533052b2f468d6ee6334dde919,
+        type: 3}
+      propertyPath: m_Name
+      value: Snapchat Score Effect
       objectReference: {fileID: 0}
     - target: {fileID: 2261438807871473821, guid: ce4ac6533052b2f468d6ee6334dde919,
         type: 3}
@@ -1534,6 +1534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1734831151}
   - component: {fileID: 1734831153}
+  - component: {fileID: 1734831154}
   - component: {fileID: 1734831152}
   m_Layer: 5
   m_Name: Game Over
@@ -1601,6 +1602,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734831150}
   m_CullTransparentMesh: 0
+--- !u!95 &1734831154
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734831150}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 034261f068fd22c47a9c4ae542bd119a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!224 &1756174828 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1751268999797824239, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
@@ -1710,11 +1730,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 365724574}
     m_Modifications:
-    - target: {fileID: 236124940587498306, guid: f2a7863d49f4e204f95fe5545a510c7b,
-        type: 3}
-      propertyPath: m_Name
-      value: Reddit Score Effect
-      objectReference: {fileID: 0}
     - target: {fileID: 46276156191918043, guid: f2a7863d49f4e204f95fe5545a510c7b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1769,6 +1784,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 236124940587498306, guid: f2a7863d49f4e204f95fe5545a510c7b,
+        type: 3}
+      propertyPath: m_Name
+      value: Reddit Score Effect
       objectReference: {fileID: 0}
     - target: {fileID: 236124940587498305, guid: f2a7863d49f4e204f95fe5545a510c7b,
         type: 3}
@@ -1796,11 +1816,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 365724574}
     m_Modifications:
-    - target: {fileID: 1850716818146441700, guid: 02f953df784fc5c46894b89839527d9a,
-        type: 3}
-      propertyPath: m_Name
-      value: Facebook Score Effect
-      objectReference: {fileID: 0}
     - target: {fileID: 1895334472304657789, guid: 02f953df784fc5c46894b89839527d9a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1855,6 +1870,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850716818146441700, guid: 02f953df784fc5c46894b89839527d9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Facebook Score Effect
       objectReference: {fileID: 0}
     - target: {fileID: 1850716818146441703, guid: 02f953df784fc5c46894b89839527d9a,
         type: 3}
@@ -2281,6 +2301,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Line
       objectReference: {fileID: 0}
+    - target: {fileID: 6554320430927885027, guid: d96348138017bb64196dc80d6cabffcf,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554320430927885027, guid: d96348138017bb64196dc80d6cabffcf,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0.65882355
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554320430927885027, guid: d96348138017bb64196dc80d6cabffcf,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554320430927885027, guid: d96348138017bb64196dc80d6cabffcf,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554320430927885027, guid: d96348138017bb64196dc80d6cabffcf,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.6604651
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554320430927885027, guid: d96348138017bb64196dc80d6cabffcf,
+        type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6554320430927885027, guid: d96348138017bb64196dc80d6cabffcf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3895b3e2a9b7f7d4fb3dead534bbae57, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d96348138017bb64196dc80d6cabffcf, type: 3}
 --- !u!1001 &6596711886715603657

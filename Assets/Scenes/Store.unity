@@ -403,11 +403,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 894908442}
     m_Modifications:
-    - target: {fileID: 2261438807871473822, guid: ce4ac6533052b2f468d6ee6334dde919,
-        type: 3}
-      propertyPath: m_Name
-      value: Snapchat Score Effect
-      objectReference: {fileID: 0}
     - target: {fileID: 2053847141386187783, guid: ce4ac6533052b2f468d6ee6334dde919,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -462,6 +457,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2261438807871473822, guid: ce4ac6533052b2f468d6ee6334dde919,
+        type: 3}
+      propertyPath: m_Name
+      value: Snapchat Score Effect
       objectReference: {fileID: 0}
     - target: {fileID: 2261438807871473821, guid: ce4ac6533052b2f468d6ee6334dde919,
         type: 3}
@@ -1261,11 +1261,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 894908442}
     m_Modifications:
-    - target: {fileID: 1850716818146441700, guid: 02f953df784fc5c46894b89839527d9a,
-        type: 3}
-      propertyPath: m_Name
-      value: Facebook Score Effect
-      objectReference: {fileID: 0}
     - target: {fileID: 1895334472304657789, guid: 02f953df784fc5c46894b89839527d9a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1320,6 +1315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850716818146441700, guid: 02f953df784fc5c46894b89839527d9a,
+        type: 3}
+      propertyPath: m_Name
+      value: Facebook Score Effect
       objectReference: {fileID: 0}
     - target: {fileID: 1850716818146441703, guid: 02f953df784fc5c46894b89839527d9a,
         type: 3}
@@ -1744,11 +1744,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3617492152870219792, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
         type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3617492152870219792, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
-        type: 3}
       propertyPath: m_SizeDelta.y
       value: 90
       objectReference: {fileID: 0}
@@ -1760,7 +1755,7 @@ PrefabInstance:
     - target: {fileID: 3617492152870219792, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3617492152870219792, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
         type: 3}
@@ -1770,7 +1765,7 @@ PrefabInstance:
     - target: {fileID: 3617492152870219792, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3617492152870219792, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
         type: 3}
@@ -1780,12 +1775,17 @@ PrefabInstance:
     - target: {fileID: 3617492152870219792, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3617492152870219792, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
         type: 3}
       propertyPath: m_SizeDelta.x
       value: 900
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617492152870219792, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 3874874124913077138, guid: 7acac95b190dc3e4ba0ee8796d61fc5f,
         type: 3}
@@ -2017,6 +2017,7 @@ GameObject:
   - component: {fileID: 939055640}
   - component: {fileID: 939055639}
   - component: {fileID: 939055638}
+  - component: {fileID: 939055641}
   m_Layer: 5
   m_Name: Return
   m_TagString: Untagged
@@ -2137,6 +2138,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 939055636}
   m_CullTransparentMesh: 0
+--- !u!95 &939055641
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939055636}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8740e40660f3379448a3e4ff91a20b2d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &971883912
 GameObject:
   m_ObjectHideFlags: 0
@@ -3656,11 +3676,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 894908442}
     m_Modifications:
-    - target: {fileID: 236124940587498306, guid: f2a7863d49f4e204f95fe5545a510c7b,
-        type: 3}
-      propertyPath: m_Name
-      value: Reddit Score Effect
-      objectReference: {fileID: 0}
     - target: {fileID: 46276156191918043, guid: f2a7863d49f4e204f95fe5545a510c7b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3715,6 +3730,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 236124940587498306, guid: f2a7863d49f4e204f95fe5545a510c7b,
+        type: 3}
+      propertyPath: m_Name
+      value: Reddit Score Effect
       objectReference: {fileID: 0}
     - target: {fileID: 236124940587498305, guid: f2a7863d49f4e204f95fe5545a510c7b,
         type: 3}
@@ -6592,7 +6612,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -7.5006}
+  m_AnchoredPosition: {x: 0, y: -7.5}
   m_SizeDelta: {x: 1430, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5255694712041086138
@@ -6606,6 +6626,7 @@ GameObject:
   - component: {fileID: 5255694712041086137}
   - component: {fileID: 5255694712041086134}
   - component: {fileID: 5255694712041086136}
+  - component: {fileID: 5255694712041086139}
   m_Layer: 5
   m_Name: Upgrades
   m_TagString: Untagged
@@ -6613,6 +6634,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &5255694712041086139
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5255694712041086138}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e8e6ca91b8f813948ad11b0c4c386cee, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &8341084001797084399
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3617492152870219792}
   - component: {fileID: 3617492152870219807}
+  - component: {fileID: 5090129369508043992}
   - component: {fileID: 3617492152870219806}
   m_Layer: 5
   m_Name: Scores
@@ -49,6 +50,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3617492152870219795}
   m_CullTransparentMesh: 0
+--- !u!95 &5090129369508043992
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3617492152870219795}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ec437ccf173e04a40a9618c490a944f8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &3617492152870219806
 MonoBehaviour:
   m_ObjectHideFlags: 0
