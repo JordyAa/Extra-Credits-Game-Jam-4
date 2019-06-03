@@ -53,7 +53,7 @@ public class SpawnManager : MonoBehaviour
         else
         {
             timeUntilSpawn = Random.Range(0.9f * timeBetweenSpawns, 1.1f * timeBetweenSpawns);
-            timeBetweenSpawns = Mathf.Max(0.5f, timeBetweenSpawns * Random.Range(0.95f, 1f));
+            timeBetweenSpawns = Mathf.Max(1f, timeBetweenSpawns * Random.Range(0.985f, 1.05f));
             SpawnBox();
         }
         
@@ -64,7 +64,7 @@ public class SpawnManager : MonoBehaviour
         else
         {
             timeUntilRocket = Random.Range(0.9f * timeBetweenRockets, 1.1f * timeBetweenRockets);
-            timeBetweenSpawns = Mathf.Max(1f, timeBetweenSpawns * Random.Range(0.9f, 1f));
+            timeBetweenSpawns = Mathf.Max(5f, timeBetweenSpawns * Random.Range(0.97f, 1.1f));
             SpawnRocket();
         }
     }

@@ -12,6 +12,7 @@ public class AudioController : MonoBehaviour
     [SerializeField] private AudioClip thumbsDown;
     [SerializeField] private AudioClip upgradePurchased;
     [SerializeField] private AudioClip upgradeFailed;
+    [SerializeField] private AudioClip select;
     
     private void Awake()
     {
@@ -39,6 +40,11 @@ public class AudioController : MonoBehaviour
     public void PurchasedUpgrade(bool successful)
     {
         Play(successful ? upgradePurchased : upgradeFailed);
+    }
+
+    public void Select()
+    {
+        Play(@select);
     }
 
     private void Play(AudioClip clip)

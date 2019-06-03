@@ -243,3 +243,4 @@ MonoBehaviour:
   thumbsDown: {fileID: 8300000, guid: ac52b4b02d19c8f41995b00e0550dc60, type: 3}
   upgradePurchased: {fileID: 8300000, guid: 9105d080766ac1449a073427eda63a31, type: 3}
   upgradeFailed: {fileID: 8300000, guid: 066f8163e0eccf649a2d226efd643be7, type: 3}
+  select: {fileID: 8300000, guid: c77997ef2e6f2c9478c67377399b3406, type: 3}
